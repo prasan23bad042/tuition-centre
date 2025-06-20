@@ -1,0 +1,167 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#team img {
+  border: 4px solid #0d6efd;
+  transition: transform 0.3s ease;
+}
+
+#team img:hover {
+  transform: scale(1.1);
+}
+.navbar-brand {
+  color: #fff;
+  text-shadow: 0 0 5px gold, 0 0 10px red, 0 0 15px red;
+}
+.hero-container {
+  place-items: center;
+  text-align: center;
+  margin: 50px 50px;
+}
+.carousel-item img {
+  width: 600px;
+  height: 500px;
+  object-fit: cover;
+}
+.col-md-4 {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.col-md-4:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.navbar-brand {
+  animation: bounce-in-top 4.8s both;
+}
+@keyframes bounce-in-top {
+0% {
+  transform: translateY(-100px);
+  animation-timing-function: ease-in;
+}
+38% {
+  transform: translateY(0);
+  animation-timing-function: ease-out;
+}
+55% {
+  transform: translateY(-65px);
+  animation-timing-function: ease-in;
+}
+72% {
+  transform: translateY(0);
+  animation-timing-function: ease-out;
+}
+81% {
+  transform: translateY(-28px);
+  animation-timing-function: ease-in;
+}
+90% {
+  transform: translateY(0);
+  animation-timing-function: ease-out;
+}
+95% {
+  transform: translateY(-8px);
+  animation-timing-function: ease-in;
+}
+100% {
+  transform: translateY(0);
+  animation-timing-function: ease-out;
+}
+}
+
+/* About Section Styling */
+/* Making the about section horizontal on larger screens */
+#rs-about .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Text section styling */
+.d-grid-center {
+  flex: 1;
+  display: grid;
+  place-items: center;
+}
+
+
+/* Ensure images are responsive */
+.image-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Responsive media query: stack vertically on smaller devices */
+@media (max-width: 768px) {
+  #rs-about .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-intro p {
+    text-align: center ;
+  }
+}
+/* <-----------------------------------------------------------------------------------------------------------------------------> */
+/* RESULTS SECTION */
+.achiever-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.achiever-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.achiever-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #007bff;
+  margin-bottom: 10px;
+}
+
+#achievers h2 {
+  font-size: 2.2rem;
+}
+
+/* Aligning achiever cards horizontally */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.col-md-4 {
+  flex: 0 0 30%;
+}
+
+/* For tablets */
+@media (max-width: 768px) {
+  .col-md-4 {
+    flex: 0 0 45%;
+  }
+}
+
+/* For mobile */
+@media (max-width: 576px) {
+  .col-md-4 {
+    flex: 0 0 90%;
+  }
+}
+/* Background color */
+#result-body {
+  background-color: cadetblue;
+}
